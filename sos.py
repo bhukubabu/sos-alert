@@ -15,7 +15,7 @@ lottie = load_lottiefile("Animation - 1731325019108.json")
 c=True
 while True:
     with st_lottie_spinner(lottie, loop=True,width =300):
-        time.sleep(1)
+        time.sleep(10)
         st.write("Request is sending....")
         subprocess.run(['python','mail.py'])
         break
