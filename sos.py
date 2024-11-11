@@ -18,7 +18,8 @@ while True:
         time.sleep(10)
         st.write("Request is sending....")
         subprocess.run(['python','mail.py'])
-        st.success("Message sent successfully")
+        
     
-        break
+        break 
+st.success("Message sent successfully")
 
