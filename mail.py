@@ -6,13 +6,13 @@ from email.mime.multipart import MIMEMultipart
 import smtplib 
 import os 
 def start():
-	app_pass=os.getenv("app_password")
+	#app_pass=os.getenv("app_password")
 
 	smtp = smtplib.SMTP('smtp.gmail.com', 587) 
 	smtp.ehlo() 
 	smtp.starttls() 
 
-	smtp.login('bhuktajaya@gmail.com', app_pass) 
+	smtp.login('bhuktajaya@gmail.com', 'cqkx gedn jayc wkuq') 
 
 	def message(subject="Emergency alert", 
 				text="", img=None, 
