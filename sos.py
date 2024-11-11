@@ -20,5 +20,5 @@ while True:
         subprocess.run(['python','mail.py'])
         st.success("Message sent successfully")
     
-    break
+        break
 
