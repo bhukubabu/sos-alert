@@ -17,8 +17,8 @@ with st_lottie_spinner(lottie, loop=True,width =400):
         time.sleep(10)
         #st.write("Request is sending....")
         #subprocess.run(['python','mail.py'])
-        if(start()):
+        start()
             #break 
-            st.success("Message sent successfully")
+st.success("Message sent successfully")
             #break
 
