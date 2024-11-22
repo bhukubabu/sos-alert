@@ -1,17 +1,19 @@
+from dotenv import load_dotenv
 from email.mime.text import MIMEText 
 from email.mime.image import MIMEImage 
 from email.mime.application import MIMEApplication 
 from email.mime.multipart import MIMEMultipart 
 import smtplib 
 import os 
-def start():
-	#app_pass=os.getenv("app_password")
 
+load_dotenv()
+app_pass=os.getenv("app_password")
+def start():
 	smtp = smtplib.SMTP('smtp.gmail.com', 587) 
 	smtp.ehlo() 
 	smtp.starttls() 
 
-	smtp.login('bhuktajaya@gmail.com', 'jjwc ysiu jaba laol') 
+	smtp.login('bhuktajaya@gmail.com',app_pass ) 
 
 	def message(subject="Emergency alert", 
 				text="", img=None, 
@@ -54,3 +56,4 @@ def start():
 	
 if __name__=="__main__":
 	start()
+	#print(app_pass)
