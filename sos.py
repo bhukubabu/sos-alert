@@ -20,7 +20,7 @@ if not st.session_state.email_sent:
           time.sleep(10)
           mail.start()
           st.session_state.email_sent=True
-            #break 
+          break 
       st.success("Message sent successfully")
 else: 
      st.info("Email has sent already")
