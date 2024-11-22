@@ -12,7 +12,7 @@ def start():
 	smtp.ehlo() 
 	smtp.starttls() 
 
-	smtp.login('bhuktajaya@gmail.com', 'jjwc ysiu jaba laol') 
+	smtp.login('bhuktajaya@gmail.com', 'cqkx gedn jayc wkuq') 
 
 	def message(subject="Emergency alert", 
 				text="", img=None, 
