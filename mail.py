@@ -1,4 +1,4 @@
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from email.mime.text import MIMEText 
 from email.mime.image import MIMEImage 
 from email.mime.application import MIMEApplication 
@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 import smtplib 
 import os 
 
-load_dotenv()
+#load_dotenv()
 app_pass=os.getenv("app_password")
 def start():
 	smtp = smtplib.SMTP('smtp.gmail.com', 587) 
