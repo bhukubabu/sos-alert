@@ -17,11 +17,9 @@ lottie = load_lottiefile("Animation - 1731325019108.json")
 c=True
 if not st.session_state.email_sent: 
       with st_lottie_spinner(lottie, loop=True,width =400):
-           time.sleep(10)
-        #st.write("Request is sending....")
-        #subprocess.run(['python','mail.py'])
-           mail.start()
-           st.session_state.email_sent=True
+          time.sleep(10)
+          mail.start()
+          st.session_state.email_sent=True
             #break 
       st.success("Message sent successfully")
 else: 
