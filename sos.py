@@ -20,5 +20,5 @@ with st_lottie_spinner(lottie, loop=True,width =400):
         if(start()):
             #break 
             st.success("Message sent successfully")
-            break
+            #break
 
