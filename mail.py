@@ -50,7 +50,7 @@ def start():
 				to_addrs=to, msg=msg.as_string()) 
 
 	smtp.quit()
-	return True
+	#return True
 	
 #if __name__=="__main__":
 	#start()
