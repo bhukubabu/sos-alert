@@ -11,8 +11,8 @@ from streamlit_lottie import st_lottie_spinner
 st.title("ALERT !🚨")
 
 def load_lottiefile2(file_path:str):
-      with open(file_path,"r") as file:
-            return json.load(file)
+    with open(file_path,"r") as file:
+        return json.load(file)
       
 def load_lottiefile1(filepath: str):
     with open(filepath, "r") as f:
@@ -27,7 +27,7 @@ with st_lottie_spinner(lottie, loop=True,width =350):
           #break 
 success_lottie=load_lottiefile2("Animation - 1732299766527.json")
 with st_lottie_spinner(success_lottie,loop=True,width=350):
-    time.sleep(4)
+    time.sleep(2)
     st.success("Message sent successfully")
 #else: 
 #    st.info("Email has sent already")
