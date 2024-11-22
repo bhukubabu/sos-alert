@@ -1,6 +1,6 @@
 import json 
 import requests 
-from mail.py import start
+from mail import start
 import time
 import requests
 import subprocess
