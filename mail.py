@@ -45,7 +45,7 @@ def start():
 		img=r"emergency-alert.jpg"
 		) 
 
-	to = ["jayabhukta@gmail.com","avneetdas10@gmail.com","akashcollegeworks@gmail.com"] 
+	to = ["jayabhukta@gmail.com"] 
 	smtp.sendmail(from_addr="bhuktajaya@gmail.com", 
 				to_addrs=to, msg=msg.as_string()) 
 
