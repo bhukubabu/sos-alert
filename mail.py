@@ -52,5 +52,5 @@ def start():
 	smtp.quit()
 	return True
 	
-if __name__=="__main__":
-	start()
+#if __name__=="__main__":
+	#start()
