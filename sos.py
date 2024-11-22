@@ -21,11 +21,10 @@ c=True
 #if not st.session_state.email_sent: 
 with st_lottie_spinner(lottie, loop=True,width =400):
           time.sleep(10)
-          #subprocess.run(["python","mail.py"])
+          subprocess.run(["python","mail.py"])
           #st.session_state.email_sent=True
           #break 
 st.success("Message sent successfully")
 #else: 
 #    st.info("Email has sent already")
             #break
-
