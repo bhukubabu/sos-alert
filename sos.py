@@ -20,7 +20,7 @@ if not st.session_state.email_sent:
            time.sleep(10)
         #st.write("Request is sending....")
         #subprocess.run(['python','mail.py'])
-           #mail.start()
+           mail.start()
            st.session_state.email_sent=True
             #break 
       st.success("Message sent successfully")
