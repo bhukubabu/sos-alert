@@ -1,6 +1,6 @@
 import json 
 import requests 
-
+from mail.py import start
 import time
 import requests
 import subprocess
@@ -16,9 +16,9 @@ c=True
 with st_lottie_spinner(lottie, loop=True,width =400):
         time.sleep(10)
         #st.write("Request is sending....")
-        subprocess.run(['python','mail.py'])
-        
-    
-        break 
-st.success("Message sent successfully")
+        #subprocess.run(['python','mail.py'])
+        if(start()):
+            #break 
+            st.success("Message sent successfully")
+            break
 
