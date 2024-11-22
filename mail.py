@@ -1,4 +1,3 @@
-# Import the following module 
 from email.mime.text import MIMEText 
 from email.mime.image import MIMEImage 
 from email.mime.application import MIMEApplication 
@@ -50,8 +49,8 @@ def start():
 				to_addrs=to, msg=msg.as_string()) 
 
 	smtp.quit()
-	exit()
+	#exit()
 	#return True
 	
-#if __name__=="__main__":
-	#start()
+if __name__=="__main__":
+	start()
