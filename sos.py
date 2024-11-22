@@ -19,6 +19,6 @@ with st_lottie_spinner(lottie, loop=True,width =400):
         subprocess.run(['python','mail.py'])
         
     
-       # break 
+        break 
 st.success("Message sent successfully")
 
